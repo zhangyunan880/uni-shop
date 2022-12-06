@@ -1,6 +1,6 @@
 <template>
-	<view class="my-search-container" :style="{'background-color': bgcolor}">
-		<view class="my-search-box" :style="{'border-radius': radius + 'px'}" @click="searchBoxHandler">
+	<view class="my-search-container" :style="{'background-color' :bgcolor}">
+		<view class="my-search-box" :style="{'border-radius' :radius + 'px'}" @click="searchBoxHandler">
 			<uni-icons type="search" size="17"></uni-icons>
 			<text class="placeholder">搜索</text>
 		</view>
