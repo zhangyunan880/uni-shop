@@ -6,7 +6,7 @@
 			<my-search @click="gotoSearch"></my-search>
 		</view>
 
-	
+
 
 
 		<swiper :indicator-dots="true" :autoplay="true" :interval="3000" :duration="1000" :circular="true">
@@ -59,7 +59,9 @@
 	import {
 		$http
 	} from '@escook/request-miniprogram';
+	import badgeMix from '@/mixins/tabbar-badge.js'
 	export default {
+  mixins: [badgeMix],
 		data() {
 			return {
 				//轮播
@@ -75,6 +77,7 @@
 			this.getFloorList()
 		},
 		methods: {
+		
 			async getswiperlist() {
 				const {
 					data: res

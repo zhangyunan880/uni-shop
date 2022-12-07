@@ -38,8 +38,11 @@
 </template>
 
 <script>
+import badgeMix from '@/mixins/tabbar-badge.js'
 	export default {
+			  mixins: [badgeMix],
 		data() {
+			
 			return {
 				// 窗口的可用高度 = 屏幕高度 - navigationBar高度 - tabBar 高度
 				wh: 0,
